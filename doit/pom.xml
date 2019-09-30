@@ -30,5 +30,15 @@
       <artifactId>modelmapper</artifactId>
       <version>2.3.1</version>
     </dependency>
+    <dependency>
+      <groupId>me.coneseo</groupId>
+      <artifactId>coneseo-Spring-Boot-Starter</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
   </dependencies>
 </project>

@@ -13,8 +13,8 @@ public class HolomanCofiguration {
   @ConditionalOnMissingBean
   public Holoman holoman(HolomanProperties properties){
     Holoman holoman = new Holoman();
-    holoman.setHowLong(properties.getHowLong());
-    holoman.setName(properties.getName());
+//    holoman.setHowLong(properties.getHowLong());
+//    holoman.setName(properties.getName());
     return holoman;
   }
 
