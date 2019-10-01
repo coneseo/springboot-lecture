@@ -15,6 +15,7 @@ public class PortListener implements ApplicationListener<ServletWebServerInitial
     ServletWebServerApplicationContext applicationContext = servletWebServerInitializedEvent
         .getApplicationContext();
     //서블릿 웹 어플리케이션 컨텍스트 이기 때문에 서버를 알 수 있다. 그리고 웹 서버를 통해 포트를 알 수 있다.
+    //서버가 실행되면서 나오는 로그 정보와 아래에서 띄운 정보가 일치하는지 확인한다.
     System.out.println(applicationContext.getWebServer().getPort());
 
   }
