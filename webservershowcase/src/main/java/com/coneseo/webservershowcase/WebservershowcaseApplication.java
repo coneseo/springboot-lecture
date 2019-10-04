@@ -1,6 +1,5 @@
 package com.coneseo.webservershowcase;
 
-import org.apache.catalina.connector.Connector;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
@@ -17,18 +16,23 @@ public class WebservershowcaseApplication {
     return "helllo spring";
   }
 
-  @Bean
-  public ServletWebServerFactory serverContainer(){
-    TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
-    tomcat.addAdditionalTomcatConnectors(createStandardConnector());
-    return tomcat;
-  }
-
-  private Connector createStandardConnector() {
-    Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
-    connector.setPort(8080);
-    return connector;
-  }
+  /**
+   * 커넥터를 코딩으로 추가한 부분
+   * @param args
+   *
+   */
+//  @Bean
+//  public ServletWebServerFactory serverContainer(){
+//    TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
+//    tomcat.addAdditionalTomcatConnectors(createStandardConnector());
+//    return tomcat;
+//  }
+//
+//  private Connector createStandardConnector() {
+//    Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
+//    connector.setPort(8080);
+//    return connector;
+//  }
 
   public static void main(String[] args) {
     SpringApplication.run(WebservershowcaseApplication.class, args);
