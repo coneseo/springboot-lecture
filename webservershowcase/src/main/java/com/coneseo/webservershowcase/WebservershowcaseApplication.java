@@ -2,6 +2,7 @@ package com.coneseo.webservershowcase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
@@ -35,7 +36,19 @@ public class WebservershowcaseApplication {
 //  }
 
   public static void main(String[] args) {
-    SpringApplication.run(WebservershowcaseApplication.class, args);
+    //SpringApplication.run(WebservershowcaseApplication.class, args);
+    /**
+     * 반드시 SpringApplication.run()으로만 실행시킬 수 있는게 아니라나
+     * 커스터마이징 해
+     * 1. 스프링 어플리케이션의 인스턴스를 만들어서 하거나
+     * 2. 아래와 같이 Builder로 만들어서 실행 시킬 수도 있다.
+     */
+//    SpringApplication app = new SpringApplication(WebservershowcaseApplication.class);
+//    app.run(args);
+
+    new SpringApplicationBuilder()
+        .sources(WebservershowcaseApplication.class)
+        .run(args);
   }
 
 }
