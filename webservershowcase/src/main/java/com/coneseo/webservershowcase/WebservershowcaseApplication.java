@@ -52,9 +52,10 @@ public class WebservershowcaseApplication {
 
     /**
      * app.addListeners()로 만들어 놓은 SimpleListener()를 추가한다.
+     *
      */
     SpringApplication app = new SpringApplication(WebservershowcaseApplication.class);
-    app.addListeners(new SimpleListener());
+    //app.addListeners(new SimpleListener());
     app.run(args);
 
   }

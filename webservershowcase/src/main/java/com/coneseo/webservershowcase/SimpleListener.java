@@ -4,7 +4,7 @@ import org.springframework.boot.context.event.ApplicationStartingEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component 사실상 빈으로 등록할 필요가 없기 때문에 뺀다.
 public class SimpleListener implements ApplicationListener<ApplicationStartingEvent> {
 
 /**
