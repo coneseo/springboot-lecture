@@ -4,6 +4,7 @@ import org.springframework.boot.web.servlet.context.ServletWebServerApplicationC
 import org.springframework.boot.web.servlet.context.ServletWebServerInitializedEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
+
 //웹서버가 생성이 되면 이 이벤트 리스너가 호출이 된다.
 @Component
 public class PortListener implements ApplicationListener<ServletWebServerInitializedEvent> {

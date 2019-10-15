@@ -38,7 +38,7 @@ public class TomcatexApplication {
 //    tomcat.getServer().await(); //-> 요청 기다리고 await안하면 그냥 끝남
 
     //이 상태로 실행하면 포트 정보가 나옴
-    SpringApplication.run(TomcatexApplication.class,args);
+    SpringApplication.run(TomcatexApplication.class, args);
   }
 
 }

@@ -1,6 +1,7 @@
 package me.coneseo;
 
 public class Holoman {
+
   String name;
   int howLong;
 
